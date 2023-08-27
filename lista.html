@@ -16,21 +16,18 @@
         <a href="index.html" class="btn btn-primary">Cadastrar Palavra</a>
         <a href="lista.html" class="btn btn-success">Listar Palavras</a>
         <a href="jogo.html" class="btn btn-danger">Iniciar Jogo</a>
-        <h2 class="mt-3">Cadastrar Palavras</h2>
-        <form>
-            <p>
-                <label for="inPalavra">Palavra</label>
-                <input type="text" class="form-control" id="inPalavra" required autofocus>
-            </p>
-            <p>
-                <label for="inDica">Dica da Palavra</label>
-                <input type="text" class="form-control" id="inDica">
-            </p>
-            <input type="submit" class="btn btn-primary" value="Cadastrar">
-        </form>
-    </div>
-
-    <script src="./scripts/cadastro.js"></script>
+        <h2 class="mt-3">Listagem das Palavras</h2>
+        <p class="text-end"> <input type="checkbox"> Mostrar Palavras</p>
+        <table class="table table-striped">
+            <tr>
+                <th>Palavra</th>
+                <th>Dica</th>
+                <th>Ações</th>
+            </tr>
+        </table>
+    </div>    
+   
+    <script src="./scripts/lista.js"></script>
 </body>
 
 </html>
