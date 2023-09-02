@@ -7,8 +7,8 @@ const montarTabela = () => {
     if(localStorage.getItem("jogoPalavra")){
         //obtém obtém conteúdo e converte em elementos de vetor(na ocorrÊncia)
         const palavras  = localStorage.getItem("jogoPalavra").split(";");
-        const dicas  = localStorage.getItem("jogoDica").split(";");        
-        console.log(palavras);
+        const dicas  = localStorage.getItem("jogoDica").split(";");     
+        
         //percorre os elementos do vetor e os insere na tabela
         for(let i = 0; i < palavras.length; i++){
             const linha = tbPalavras.insertRow(-1);// adiciona uma linha na tabela
@@ -18,9 +18,7 @@ const montarTabela = () => {
 
             col1.innerText = palavras[i]; // joga um conteúdo em cada célula
             col2.innerText = dicas[i];
-            col3.innerHTML = "<i class='exclui' title='Excluir'>&#10008;</i>"
-
-           console.log(palavras[i] + "---" + dicas[i] +'/ln')
+            col3.innerHTML = "<i class='exclui' title='Excluir'>&#10008;</i>"         
         
 
         }

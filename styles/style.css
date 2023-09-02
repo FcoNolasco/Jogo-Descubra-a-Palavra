@@ -29,3 +29,7 @@ img.poltrona{
     color: red;
     cursor: pointer;
 }
+
+.corFundo{
+    background-color: aliceblue;
+}
